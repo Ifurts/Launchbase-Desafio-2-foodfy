@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+
+    height: 100vh;  /* deixa o boddy com a altura toda da tela */
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header img {
+    margin: 36px 0 0 482px;
+    width: 90.6px;
+    height: 26.9px;
+}
+
+header .links {
+    margin-left: 122.4px;
+    line-height: 19px;
+    display: inline-block;  
+}
+
+header .links a {
+    margin: 30px 0 0 122px;
+    color: #111111;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+body .content {
+    width: 940px;
+    height: 366px;
+    margin: 36px 482px;
+    background-color: #FBDFDB;
+    align-items: center;
+    border-radius: 30px;
+    background-image: url(/assets/chef.png);
+    background-repeat: no-repeat;
+    background-position: 624px 66px;
+}
+
+body .content .titulo {
+    box-sizing: border-box;
+    padding-top: 116px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 60px;
+    
+}
+
+
+body .content section {
+    padding-top: 10px;
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}
+
+body #index {
+    margin: 50px auto 0px;
+        
+}
+
+body #index h1 {
+    font-size: 24px;
+    margin: 50px auto auto 482px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    line-height: 28px;
+}
+
+body .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 230px;
+    width: 300px;
+    gap: 20px;
+    margin-left: 482px;
+           
+      
+}
+
+body .card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    
+}    
+
+body p#title {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    line-height: 21px;
+    padding: 20px 0 5px 0;
+    color: #111111;
+}
+
+body .card p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    padding: 0 0 10px 0;
+}
+
+.footer-box {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;    /* faz com que a div se expanda em todo altura restante */
+    width: 100%;
+    align-items: flex-end;  /* alinha o footer lá em baixo */
+
+}
+
+footer {
+    padding: 23px 0;
+    background-color: #eeeeee;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Pagina about.html */
+
+body .content-about {
+    margin: 50px auto 30px auto;
+    width: 940px;
+    height: 280px;
+}
+
+body .content-about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    
+}
+
+body .content-started {
+
+    margin: 30px auto 0px auto;
+    width: 940px;
+    height: 280px;
+}
+
+body .content-started p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+body .content-our-recipes {
+    margin: 0px auto 50px auto;
+    width: 940px;
+    height: auto;
+    margin-top: 30px;
+}
+
+body .content-our-recipes p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Modal */
+
+body .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+body .modal {
+    background-color: white;
+    border-radius: 16px;
+    width: 660px;
+    height: 413px;
+    margin: 25vh auto;
+
+}
+
+
+body .modal img {
+    width: 600px;
+    height: 230px;
+    border-radius: 42px;
+    padding: 30px 0px 30px 0px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0px auto;
+}
+
+body .modal h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #111111;
+    font-weight: normal;
+
+}
+
+body .modal p {
+margin: 5px 0 60px 0;
+font-size: 18px;
+color: #777777;
+text-align: center;
+
+}
+
+body .modal a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #999999
+}
