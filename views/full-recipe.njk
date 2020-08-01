@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Receita</title>
+{% endblock %}
+
+    {% block content %}
+    
+    <div class="full-recipe">
+         {% for item in items %}    
+        <div class="big-card">
+            <img src="{{item.image}}" alt="burger">
+            <p id="title">{{item.title}}</p> 
+            <p class="author">Por {{item.author}}</p>
+            <div>
+                <div class="block">
+                    <h2>Ingredientes</h2>
+                    <button id="ing" class="buttom-toogle">ESCONDER</button>
+                </div>
+                <p class="ing" class="hide">{{item.ingredients}}</p>
+            </div>
+            <div>
+                <div class="block">
+                    <h2>Modo de Preparo</h2>
+                    <button id="prep" class="buttom-toogle">ESCONDER</button>
+                </div>
+                <p class="prep" class="hide">{{item.preparation}}</p>
+            </div>
+            <div>
+                <div class="block">
+                    <h2>Informações adicionais</h2>
+                    <button id="info" class="buttom-toogle">ESCONDER</button>
+                </div>
+                <p class="info" class="hide">{{item.information}}</p>
+            </div>
+        </div>
+        {% endfor %}
+   
+
+    </div>
+    <script src="/scripts.js"></script> 
+    {% endblock %}

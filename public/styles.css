@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    height: 100vh; 
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* header */
+
+header {
+    display: flex;
+    margin: 0 auto;
+    width: 940px;
+    align-items: center;
+    
+}
+
+header img {
+    margin: 36px 0 0 0;
+    width: 90.6px;
+    height: 26.9px;
+}
+
+header .links {
+    margin: 25px 0 0 122.4px;
+    line-height: 19px;
+    display: inline-block;
+}
+
+header .links a {
+    margin: 0 0 0 122px;
+    color: #111111;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
+}
+/* FIM --- header */
+
+body .content {
+    width: 940px;
+    height: 366px;
+    margin: 36px 482px;
+    background-color: #FBDFDB;
+    align-items: center;
+    border-radius: 30px;
+    background-image: url(/assets/chef.png);
+    background-repeat: no-repeat;
+    background-position: 624px 66px;
+    min-height: 40%;
+            
+}
+
+body .content .titulo {
+    box-sizing: border-box;
+    padding-top: 116px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 60px;
+    
+}
+
+
+body .content section {
+    padding-top: 10px;
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}
+
+body #index {
+    margin: auto;
+    height: auto; 
+    max-width: 940px;
+    
+    
+                   
+}
+
+body #index h1 {
+    font-size: 24px;
+    margin: 50px auto auto 0px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    line-height: 28px;
+}
+
+body .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    width: auto;
+    gap: 20px;
+    justify-content: center;
+         
+}
+
+body .card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    
+}    
+
+body p#title {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    line-height: 21px;
+    padding: 20px 0 5px 0;
+    color: #111111;
+}
+
+body .card p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    padding: 0 0 10px 0;
+}
+
+
+footer {
+    margin-top: auto;
+    padding: 23px 0;
+    background-color: #eeeeee;
+    width: 100vw;
+    text-align: center;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* Pagina about.html */
+
+body .contents {
+    position: relative;
+     
+}
+
+body .content-about {
+    margin: 50px auto 30px auto;
+    max-width: 940px;
+    height: 280px;
+}
+
+body .content-about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    max-width: 940px;
+    
+}
+
+body .content-started {
+
+    margin: 30px auto 0px auto;
+    max-width: 940px;
+    height: 280px;
+}
+
+body .content-started p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 940px;
+}
+
+body .content-our-recipes {
+    margin: 0px auto 50px auto;
+    width: 940px;
+    height: auto;
+    margin-top: 30px;
+    
+}
+
+body .content-our-recipes p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    text-align: justify;
+    margin-top: 20px;
+    max-width: 940px;
+        
+}
+
+.not-found {
+    align-items: center;
+
+}
+
+.other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 400px;
+    
+}
+
+/* full-recipe page */
+
+.full-recipe {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    margin: 0 auto ;
+}
+
+.big-card img {
+    border-radius: 15px;
+    margin: 50px auto;    
+}
+
+.big-card #title {
+    margin-bottom: 4px;
+    font-size: 36px;
+    color: #111111;
+    font-weight: bold;
+    text-align: center;
+}
+
+.author {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #777777;
+}
+
+/* buttom and h2 */
+
+.block {
+    display: flex;
+    margin: 50px 0 20px 0;
+    position: relative;
+}
+
+.buttom-toogle {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #999999;
+    background-color: white;
+    font-weight: bold;          
+}
+
+#ing {
+    position: absolute;
+    left: 140px;
+    top: 7px;
+}
+
+#prep {
+    position: absolute;
+    left: 190px;
+    top: 7px
+}
+
+#info {
+    position: absolute;
+    left: 260px;
+    top: 7px
+
+}
+
+
+
+.buttom-toogle:focus {
+    outline: none;
+}
+
+.buttom-toogle:hover {
+    text-decoration: underline;
+    color: rgba(233, 202, 131, 0.938);
+}
+
+/* end----- */
+
+/* ing-prep-info */
+
+.ing, .prep, .info {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;    
+}
+/* buttom hide/show */
+
+.hide {
+    display: none;
+}
+
+
