@@ -61,4 +61,17 @@ buttomInfo.addEventListener("click", function(){
     }
 })
 
+ 
+const cards = document.querySelectorAll('.card')
 
+
+for (let card of cards) {
+    card.addEventListener("click", function () {
+        const getRecipeId = card.getAttribute("id");
+        window.location.href = `/fullrecipe/${getRecipeId}`
+        
+    })
+}
+
+
+cards.onClick = function (){console.log(1)}

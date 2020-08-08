@@ -28,8 +28,16 @@ server.get("/recipes", function(req, res){
     return res.render("recipes", { items: recipe})
 })
 
-server.get("/full-recipe", function(req, res){
-    return res.render("full-recipe", { items: recipe})
+server.get("/full-recipe/:index", function (req, res) {
+    const recipeIndex = req.params.index
+    
+    if(!recipe[recipeIndex]) {
+        const error = { name: 'Receita não existente'}
+        
+        return res.status(404).render("not-found", { error })
+      }
+    else
+        return res.render("fullrecipe",{ items : recipe[recipeIndex] });;
 })
 
 
@@ -43,21 +51,8 @@ server.listen(5000, function() {
     console.log("server is running")
 });
 
-
-// server.get("/full-recipe", function(req, res) {
-//     const id = re.query.id
-
-//     const fullRecipe = recipes.find(function(fullRecipe){
-//         if (fullRecipe.id == id) {
-//             return true
-//         }
-//     })
-
-//     if (!fullRecipe) {
-//         return res.render("not-found")
-//     }
-
-//     return res.render("fullRecipe", { fullRecipe})
+// server.get("/full-recipe", function(req, res){
+//     return res.render("full-recipe", { items: recipe})
 // })
 
 
