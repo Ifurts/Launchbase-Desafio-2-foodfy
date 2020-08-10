@@ -11,7 +11,9 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express:server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
+    
 })
 
 // rotas
@@ -28,32 +30,25 @@ server.get("/recipes", function(req, res){
     return res.render("recipes", { items: recipe})
 })
 
-server.get("/full-recipe/:index", function (req, res) {
-    const recipeIndex = req.params.index
-    
-    if(!recipe[recipeIndex]) {
-        const error = { name: 'Receita não existente'}
+server.get("/fullrecipe/:index", function(req, res){
+    const recipeData = req.params.index
+    if (!recipe[recipeData]) {
+        res.status(404).render("not-found");
         
-        return res.status(404).render("not-found", { error })
-      }
-    else
-        return res.render("fullrecipe",{ items : recipe[recipeIndex] });;
+    } else {
+        return res.render("fullrecipe", {items : recipe[recipeData]})
+        
+    }
 })
 
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
-  })
+})
 
 // fim rotas
 
 server.listen(5000, function() {
     console.log("server is running")
 });
-
-// server.get("/full-recipe", function(req, res){
-//     return res.render("full-recipe", { items: recipe})
-// })
-
-
 

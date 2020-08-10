@@ -133,7 +133,7 @@ body .card p {
 
 
 footer {
-    margin-top: auto;
+    margin-top: 40px;
     padding: 23px 0;
     background-color: #eeeeee;
     width: 100vw;
@@ -300,6 +300,17 @@ body .content-our-recipes p {
     font-size: 18px;
     color: #444444;
     line-height: 28px;    
+}
+
+#ingred {
+    margin-left: 20px;
+}
+
+#ingred, #prepa, #infor {
+    font-family: 'roboto';
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
 }
 /* buttom hide/show */
 

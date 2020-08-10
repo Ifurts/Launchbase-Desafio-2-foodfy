@@ -14,11 +14,12 @@
 
         <header>
             <a href="/"><img src="/assets/logo.png" alt="logo"></a>
-
+            {% block links %}
             <div class="links">
-                <a href="/about">Sobre</a>
+                <a href="/about" id="about">Sobre</a>
                 <a href="/recipes" id="recipe">Receitas</a>
             </div>
+            {% endblock links %}
         </header>
 
         {% block content %}{% endblock %}

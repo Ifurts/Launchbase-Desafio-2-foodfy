@@ -1,7 +1,6 @@
-const ingredients = document.querySelector('.ing');
-const prepare  = document.querySelector('.prep');
-const information = document.querySelector('.info');
-
+const ingredients = document.querySelector('#ingred');
+const prepare  = document.querySelector('#prepa');
+const information = document.querySelector('#infor');
 
 document.querySelector("#ing").addEventListener("click", function() {
     if (ingredients.classList.contains("hide")) {
@@ -30,6 +29,8 @@ document.querySelector("#info").addEventListener("click", function() {
         information.classList.add("hide")
     }    
 })
+
+// buttom script
 
 const buttomIng = document.getElementById("ing")
 
@@ -61,17 +62,23 @@ buttomInfo.addEventListener("click", function(){
     }
 })
 
- 
-const cards = document.querySelectorAll('.card')
+// end
 
+//buttom linked to fullrecipe
+ 
+const cards = document.querySelectorAll('.card .cards')
 
 for (let card of cards) {
-    card.addEventListener("click", function () {
-        const getRecipeId = card.getAttribute("id");
-        window.location.href = `/fullrecipe/${getRecipeId}`
-        
+    card.addEventListener("click", function(){
+        const cardId = card.getAttribute("id");
+        window.location.href = `/fullrecipe/${cardId}`
     })
 }
 
 
-cards.onClick = function (){console.log(1)}
+// for (let i = 0; cards.length; i++) {
+//     cards[i].addEventListener("click", function() {
+//         window.location.href = `/fullrecipe/${i}`
+//     })
+// }
+
