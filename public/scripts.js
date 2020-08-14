@@ -66,7 +66,7 @@ buttomInfo.addEventListener("click", function(){
 
 //buttom linked to fullrecipe
  
-const cards = document.querySelectorAll('.card .cards')
+const cards = document.querySelectorAll('.card')
 
 for (let card of cards) {
     card.addEventListener("click", function(){
