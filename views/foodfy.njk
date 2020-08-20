@@ -20,7 +20,16 @@
             {% endfor %}   
         </section>
     </main>
-    <script src="/scripts.js"></script>
+    <script>
+        const cards = document.querySelectorAll('.card')
+
+        for (let card of cards) {
+        card.addEventListener("click", function(){
+            const cardId = card.getAttribute("id");
+            window.location.href = `/fullrecipe/${cardId}`
+        })
+        }
+    </script>
     {% endblock %}
 
 

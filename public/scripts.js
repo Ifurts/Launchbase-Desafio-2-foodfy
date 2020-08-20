@@ -64,21 +64,3 @@ buttomInfo.addEventListener("click", function(){
 
 // end
 
-//buttom linked to fullrecipe
- 
-const cards = document.querySelectorAll('.card')
-
-for (let card of cards) {
-    card.addEventListener("click", function(){
-        const cardId = card.getAttribute("id");
-        window.location.href = `/fullrecipe/${cardId}`
-    })
-}
-
-
-// for (let i = 0; cards.length; i++) {
-//     cards[i].addEventListener("click", function() {
-//         window.location.href = `/fullrecipe/${i}`
-//     })
-// }
-
