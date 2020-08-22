@@ -1,1 +1,1 @@
-# Launchbase-Desafio-2-foodfy
+# Launchbase-Challenge-2-foodfy
